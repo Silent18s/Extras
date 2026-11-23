@@ -1335,7 +1335,7 @@ local function executorHttpGetText(url)
     return nil, "No hay un método HTTP compatible"
 end
 
-local AVATAR_EXTRAS_BASE_URL = "https://raw.githubusercontent.com/api-Silent/Extras/main/"
+local AVATAR_EXTRAS_BASE_URL = "https://raw.githubusercontent.com/Silent18s/Extras/main/"
 local AVATAR_BRIDGE_URL = AVATAR_EXTRAS_BASE_URL .. "Extras/AvatarBridge.lua"
 local AVATAR_SKINS_URL = AVATAR_EXTRAS_BASE_URL .. "SnowX-Skins.lua"
 local AVATAR_ACCESSORIES_URL = AVATAR_EXTRAS_BASE_URL .. "SnowX-Accessories.lua"
