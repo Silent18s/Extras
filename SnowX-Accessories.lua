@@ -32,20 +32,20 @@ local KORBLOX_DEATHSPEAKER_RIGHT_LEG_ID = 139607718
 local KORBLOX_DEATHWALKER_HEAD_ID = 16580493236
 
 local COLORS = {
-    Background = Color3.fromRGB(8, 11, 18),
-    BackgroundAlt = Color3.fromRGB(12, 19, 30),
-    Surface = Color3.fromRGB(19, 29, 43),
-    SurfaceUp = Color3.fromRGB(28, 42, 60),
-    Soft = Color3.fromRGB(155, 177, 203),
-    Line = Color3.fromRGB(43, 60, 81),
-    Border = Color3.fromRGB(65, 92, 124),
-    Text = Color3.fromRGB(239, 245, 253),
-    Muted = Color3.fromRGB(138, 159, 185),
-    Good = Color3.fromRGB(126, 219, 178),
-    Danger = Color3.fromRGB(250, 120, 135),
-    DangerFill = Color3.fromRGB(84, 37, 51),
-    AccentFill = Color3.fromRGB(25, 56, 88),
-    ActiveFill = Color3.fromRGB(38, 77, 112),
+    Background = Color3.fromRGB(12, 12, 14),
+    BackgroundAlt = Color3.fromRGB(18, 18, 22),
+    Surface = Color3.fromRGB(26, 26, 32),
+    SurfaceUp = Color3.fromRGB(36, 36, 44),
+    Soft = Color3.fromRGB(190, 190, 198),
+    Line = Color3.fromRGB(54, 54, 62),
+    Border = Color3.fromRGB(74, 74, 84),
+    Text = Color3.fromRGB(245, 245, 245),
+    Muted = Color3.fromRGB(170, 170, 178),
+    Good = Color3.fromRGB(160, 210, 175),
+    Danger = Color3.fromRGB(230, 130, 130),
+    DangerFill = Color3.fromRGB(95, 45, 45),
+    AccentFill = Color3.fromRGB(42, 42, 48),
+    ActiveFill = Color3.fromRGB(75, 75, 82),
 }
 
 local PRESETS = {
@@ -2517,11 +2517,11 @@ local function buildUI()
     }, header)
     local titleGradient = Instance.new("UIGradient")
     titleGradient.Color = ColorSequence.new({
-        ColorSequenceKeypoint.new(0, Color3.fromRGB(91, 144, 207)),
-        ColorSequenceKeypoint.new(0.25, Color3.fromRGB(226, 240, 255)),
-        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(139, 195, 255)),
-        ColorSequenceKeypoint.new(0.75, Color3.fromRGB(238, 247, 255)),
-        ColorSequenceKeypoint.new(1, Color3.fromRGB(79, 126, 186)),
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(145, 145, 145)),
+        ColorSequenceKeypoint.new(0.25, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(210, 210, 210)),
+        ColorSequenceKeypoint.new(0.75, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(135, 135, 135)),
     })
     titleGradient.Rotation = 90
     titleGradient.Parent = titleLabel
@@ -2670,9 +2670,9 @@ local function buildUI()
     round(preview, 12)
     local previewCardGradient = create("UIGradient", {
         Color = ColorSequence.new({
-            ColorSequenceKeypoint.new(0, Color3.fromRGB(31, 72, 116)),
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(20, 46, 82)),
             ColorSequenceKeypoint.new(0.5, COLORS.Surface),
-            ColorSequenceKeypoint.new(1, Color3.fromRGB(9, 18, 31)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(10, 20, 40)),
         }),
         Rotation = 35,
     }, preview)
@@ -2683,9 +2683,9 @@ local function buildUI()
     }, preview)
     local previewStrokeGradient = create("UIGradient", {
         Color = ColorSequence.new({
-            ColorSequenceKeypoint.new(0, Color3.fromRGB(82, 155, 235)),
-            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(202, 231, 255)),
-            ColorSequenceKeypoint.new(1, Color3.fromRGB(103, 177, 255)),
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(74, 148, 255)),
+            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(184, 226, 255)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(88, 104, 255)),
         }),
         Rotation = 0,
     }, previewCardStroke)

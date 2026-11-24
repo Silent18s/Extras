@@ -26,22 +26,22 @@ local function bumpSkinRevision()
 end
 
 local COLORS = {
-    Background = Color3.fromRGB(8, 11, 18),
-    BackgroundAlt = Color3.fromRGB(12, 19, 30),
-    Surface = Color3.fromRGB(19, 29, 43),
-    SurfaceUp = Color3.fromRGB(28, 42, 60),
-    Soft = Color3.fromRGB(155, 177, 203),
-    Line = Color3.fromRGB(43, 60, 81),
-    Border = Color3.fromRGB(65, 92, 124),
-    Text = Color3.fromRGB(239, 245, 253),
-    Icon = Color3.fromRGB(169, 192, 221),
-    Faint = Color3.fromRGB(138, 159, 185),
-    On = Color3.fromRGB(248, 251, 255),
-    OnFill = Color3.fromRGB(39, 83, 123),
-    Accent = Color3.fromRGB(119, 185, 255),
-    AccentFill = Color3.fromRGB(25, 56, 88),
-    Danger = Color3.fromRGB(255, 121, 139),
-    DangerFill = Color3.fromRGB(84, 37, 51),
+    Background = Color3.fromRGB(12, 12, 14),
+    BackgroundAlt = Color3.fromRGB(18, 18, 22),
+    Surface = Color3.fromRGB(26, 26, 32),
+    SurfaceUp = Color3.fromRGB(36, 36, 44),
+    Soft = Color3.fromRGB(190, 190, 198),
+    Line = Color3.fromRGB(54, 54, 62),
+    Border = Color3.fromRGB(74, 74, 84),
+    Text = Color3.fromRGB(245, 245, 245),
+    Icon = Color3.fromRGB(190, 190, 198),
+    Faint = Color3.fromRGB(170, 170, 178),
+    On = Color3.fromRGB(255, 255, 255),
+    OnFill = Color3.fromRGB(75, 75, 82),
+    Accent = Color3.fromRGB(255, 255, 255),
+    AccentFill = Color3.fromRGB(42, 42, 48),
+    Danger = Color3.fromRGB(255, 255, 255),
+    DangerFill = Color3.fromRGB(95, 45, 45),
 }
 
 local PANEL_WIDTH = 590
@@ -2095,11 +2095,11 @@ local titleLabel = createGuiInstance("TextLabel", {
 }, mainFrame)
 local titleGradient = Instance.new("UIGradient")
 titleGradient.Color = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(91, 144, 207)),
-    ColorSequenceKeypoint.new(0.25, Color3.fromRGB(226, 240, 255)),
-    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(139, 195, 255)),
-    ColorSequenceKeypoint.new(0.75, Color3.fromRGB(238, 247, 255)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(79, 126, 186)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(145, 145, 145)),
+    ColorSequenceKeypoint.new(0.25, Color3.fromRGB(255, 255, 255)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(210, 210, 210)),
+    ColorSequenceKeypoint.new(0.75, Color3.fromRGB(255, 255, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(135, 135, 135)),
 })
 titleGradient.Rotation = 90
 titleGradient.Parent = titleLabel
